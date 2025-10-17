@@ -8,9 +8,14 @@ import {useState} from 'react';
 const Branches = () => {
     const [active, setActive] = useState('branches');
     const [view, setView] = useState('list'); // 'list' | 'grid'
+    const [sidebarOpen, setSidebarOpen] = useState(false);
     return (
         <div>
-        <aside id="sidebar">
+        {sidebarOpen && <div id="sidebar-overlay" onClick={() => setSidebarOpen(false)}></div>}
+        <aside id="sidebar" className={sidebarOpen ? 'open' : ''}>
+            <button id="sidebar-close" onClick={() => setSidebarOpen(false)}>
+                <i className="fa-solid fa-times"></i>
+            </button>
             <img id="logo" src={logo} alt="Eccellero logo" />
             <div id="nav-buttons">
                  <button className={active === 'dashboard' ? 'active' : ''} onClick={() => setActive('dashboard')}>
@@ -47,6 +52,9 @@ const Branches = () => {
             {active === 'branches' && (
                 <div>
                     <nav id='nav-bar-branch'>
+                        <button id="mobile-menu-toggle" onClick={() => setSidebarOpen(!sidebarOpen)}>
+                            <i className="fa-solid fa-bars"></i>
+                        </button>
                         <h1>Organization - Branches</h1>
                         <div id="nav-bar-buttons">
                             <button id="del-button">Delete Branch</button>
