@@ -1,0 +1,196 @@
+.login-form {
+    background-color: white;
+    position: absolute;
+    width: 572px;
+    height: 520px;
+    left: 33%;
+    top: 190px;
+    background: #ffffff;
+    border-radius: 4px;
+}
+
+.login-form img {
+    position: absolute;
+    width: 176px;
+    height: 35px;
+    left: 198px;
+    top: 50px;
+}
+
+.login-form h2 {
+    /* Title -> */
+
+    position: absolute;
+    width: 423px;
+    height: 38px;
+    left: 76px;
+    top: 112px;
+
+    /* Headings/h2 */
+    
+    
+    
+    font-size: 28px;
+    line-height: 136.02%;
+    /* identical to box height, or 38px */
+    text-align: center;
+
+    color: #27272E;
+
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+#email{
+    /* form-label */
+
+    position: absolute;
+    width: 64px;
+    height: 20px;
+    left: 76px;
+    top: 172px;
+
+    /* Labels/label */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+    /* or 20px */
+
+    color: #3F3F46;
+
+}
+
+#password{
+    /* form-label */
+
+    position: absolute;
+    width: 80px;
+    height: 20px;
+    left: 76px;
+    top: 268px;
+
+    /* Labels/label */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+    /* or 20px */
+
+    color: #3F3F46;
+
+}   
+
+
+#email_input {
+    /* form-textfield/default */
+    position: absolute;
+    width: 425px;
+    height: 44px;
+    left: 76px;
+    top: 200px;
+    padding:10px;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+    background: #EDF2F7;
+    border: 1px solid #E4E4E7;
+    box-sizing: border-box;
+
+    font-family: 'Inter';
+    font-style: normal;
+
+}
+
+#password_input {
+    /* form-textfield/default */
+
+    position: absolute;
+    width: 425px;
+    height: 44px;
+    left: 76px;
+    top: 296px;
+    padding:10px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+    background: #EDF2F7;
+    border: 1px solid #E4E4E7;
+    box-sizing: border-box;
+
+    font-family: 'Inter';
+    font-style: normal;
+
+}
+
+.login-form a {
+    /* form-link */
+
+    position: absolute;
+    width: 112px;
+    height: 20px;
+    left: 76px;
+    top: 350px;
+
+    /* Links/link */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height */
+
+    text-align: right;
+    /* form-help-text */
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 12px;
+    /* identical to box height, or 109% */
+    display: flex;
+    align-items: center;
+
+    /* Text/Body/Muted */
+    color: #7A7A9D;
+    text-decoration: none;
+
+}
+
+.login-form button {
+    /* form-button/primary */
+
+    position: absolute;
+    width: 425px;
+    height: 44px;
+    left: 76px;
+    top: 390px;
+
+    /* Buttons/primary */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+    background: #27272E;
+    border-radius: 4px;
+    border: none;
+}

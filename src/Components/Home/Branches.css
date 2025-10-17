@@ -1,0 +1,131 @@
+#sidebar{
+    position: fixed;
+    inset: 0 auto 0 0;       /* top:0; right:auto; bottom:0; left:0 */
+    width: 240px;
+    background-color: #1b1817;
+    color: white;
+    overflow-y: auto;         /* scroll if menu is tall */
+    /* padding: 20px 16px; */
+    z-index: 1000;
+}
+
+#nav-buttons {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#nav-buttons button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: block;
+    padding:5px;
+    margin-top:5px;
+    color: inherit;              /* inherit for text */
+}
+
+#nav-buttons button:hover {
+    color: #632DE1;                  /* affects button text via inherit */
+}
+
+#nav-buttons i {
+    height : 20px;
+    background-color: transparent;
+    color : currentColor;        /* icon follows current text color */
+    vertical-align: middle;
+}
+
+#nav-buttons h3 {
+    display:inline-block;
+    color: inherit;              /* text follows button color */
+    margin-left: 10px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#profile-home {
+  position:absolute;
+  bottom: 0;
+  width:100%;
+  background: transparent;
+  color: white;
+  text-align: center;
+}
+#user-profile-home {
+    display: inline-block;
+}
+#user-profile-home img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #D8CCF3;
+    vertical-align: middle;
+}
+#user-profile-home {
+    position: relative; /* anchor for absolute toggle */
+}
+#profile-toggle {
+    position: relative;
+    background: transparent;
+    border: none;
+    color: currentColor;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 0.5;
+    margin-left:30px;
+}
+#username-home {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+    margin :0;
+    padding:10px;
+}
+#username-home h4 {
+    margin: 0;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+#username-home p {
+    margin: 0;
+    font-size: 12px;
+    color: #632DE1  ;
+    font-family: 'Inter';
+    font-weight: 700;
+}
+
+#signout-div-home {
+    vertical-align: middle;
+    display: flex;
+    justify-content: center; 
+    
+}
+#signout-home {
+    background-color: #0C0C0E;
+    padding:10px 35px;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+    vertical-align: middle;
+    border:none;
+    cursor:pointer;
+    width:100%;
+}
+#signout-div-home i {
+    height: 18px;
+    width: 18px;
+    margin-left: -2px;
+    vertical-align: middle;
+    border: none; 
+    border-left:1px solid #1b1817;
+    padding:9.5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor:pointer;
+    color: white;
+    background-color: #0C0C0E;
+}
