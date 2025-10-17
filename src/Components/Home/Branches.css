@@ -105,6 +105,7 @@
     color: #632DE1  ;
     font-family: 'Inter';
     font-weight: 700;
+    
 }
 
 #signout-div-home {
@@ -143,15 +144,19 @@
 
 #content-area {
     margin-left: 240px;       /* leave space for sidebar */
-    padding:0;
-    background-color: #cde1f6;
-    height: 100vh;
+    padding:0 24px 24px 24px;
+    background-color: #F6F7F9;
+    min-height: 100vh;
 }
 
 #nav-bar-branch{
     background-color: white;
-    padding:10px 10px;
-    height:50px;
+    padding:14px 16px;
+    height:56px;
+    display:flex;
+    align-items:center;
+    margin-left:-24px;
+    margin-right:-24px;
 }
 #nav-bar-branch h1{
     font-family: 'Inter';
@@ -187,3 +192,188 @@
     cursor:pointer;
 }
 
+#branch-toolbar{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    gap:12px;
+    background:#F1F2F4;
+    padding:12px 16px;
+    border-radius:6px;
+    margin:16px 0;
+}
+#branch-toolbar-left h2{
+    display:inline-block;
+    margin-right:12px;
+    font-family:'Inter';
+    font-weight:600;
+    font-size:18px;
+    color:#27272E;
+}
+
+#entries-count{ 
+    color:#A1A1AA; 
+    font-family:'Inter'; 
+    font-size:12px; 
+}
+
+#branch-search{ 
+    display:flex; 
+    align-items:center; 
+    gap:8px; 
+    background:#EDEFF2; 
+    margin-top:30px;
+    padding:8px 0px; 
+    border-radius:4px; 
+}
+#branch-search input{ 
+    border:none; 
+    outline:none; 
+    background:transparent; 
+    width:220px; 
+    font-family:'Inter'; 
+    font-size:14px; 
+}
+
+#view-toggle{ 
+    display:inline-flex; 
+    background:#FFFFFF; 
+    border-radius:6px; 
+    overflow:hidden; 
+    border:1px solid #E4E4E7; 
+}
+#view-toggle button{ 
+    border:none; 
+    background:transparent; 
+    padding:8px 10px; 
+    cursor:pointer; 
+    color:#D3D9E0; 
+}
+#view-toggle button.active{ 
+    color:#292D32; 
+}
+
+.branch-table{ 
+    background:#F5F6F7; 
+    border-radius:8px; 
+    overflow:hidden; 
+}
+.branch-table-head{ 
+    display:grid; 
+    grid-template-columns: 2fr 1fr 1fr 40px; 
+    padding:12px 16px; background:#F8F8F9; 
+    color:#3F3F46; 
+    font-family:'Inter'; 
+    font-size:12px; 
+}
+.branch-table-head .name{
+    margin-left: 40px;
+}
+
+.branch-row{ 
+    display:grid; 
+    grid-template-columns: 2fr 1fr 1fr 40px; 
+    padding:12px 16px; 
+    border-top:1px solid #EEE; 
+    align-items:center; 
+    background:#FFFFFF; 
+    margin-bottom: 10px;
+}
+.branch-row .checkbox{ 
+    display:inline-block; 
+    align-items: center;
+    width:13px; 
+    height:13px; 
+    /* border:1px solid #DDD;  */
+    background-color: #F0F0F2;
+    border-radius:2px; 
+    margin-right:25px; 
+    cursor: pointer;
+    margin-top: auto;
+}
+.branch-row .name{ 
+    font-family:'Inter'; 
+    color:#27272E; 
+    font-size:16px;
+}
+.branch-row .employees, .branch-row .location{ 
+    color:#52525B; 
+    font-family:'Inter'; 
+    font-size:14px; 
+}
+.branch-row .more{ 
+    text-align:center; 
+    color:#71717A; 
+    cursor: pointer;
+}
+
+.branch-grid{ 
+    display:grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap:28px; 
+}
+.branch-card{ 
+    background:#FFFFFF; 
+    border-radius:8px; 
+    padding:16px; 
+    min-height:90px; 
+    box-shadow: 0 1px 0 rgba(0,0,0,0.02); 
+}
+.branch-card .card-top{ 
+    display:flex; 
+    justify-content:space-between; 
+    align-items:center; 
+}
+.branch-card .card-top .left{ 
+    display:flex; 
+    align-items:center; 
+    gap:12px; 
+}
+.branch-card .checkbox{ 
+    display:inline-block; 
+    width:16px; 
+    height:16px; 
+    background:#EFF1F4; 
+    border-radius:4px; 
+}
+.branch-card .title-inline{ 
+    display:flex; 
+    align-items:baseline; 
+    gap:12px; 
+}
+.branch-card .emp{ 
+    color:#4a4a4a; 
+    font-size:12px; 
+    font-family:'Inter'; 
+    font-weight:400; 
+}
+.branch-card .card-more{
+    border:none; 
+    background:transparent; 
+    color:#000000; 
+    cursor:pointer; 
+}
+.branch-card h4{ 
+    margin:0; 
+    font-family:'Inter'; 
+    font-weight:400; 
+    color:#000000; 
+    font-size:14px; 
+}
+.branch-card .card-footer{ 
+    margin-top:36px; 
+    color:#9CA3AF; 
+    font-size:12px; 
+    text-align:right; 
+    font-family:'Inter'; 
+    font-weight:400; 
+}
+
+@media (max-width: 900px){
+  .branch-grid{ grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px){
+  #content-area{ margin-left: 0; padding: 12px; }
+  .branch-grid{ grid-template-columns: 1fr; }
+  #sidebar{ position: static; width: 100%; }
+}
