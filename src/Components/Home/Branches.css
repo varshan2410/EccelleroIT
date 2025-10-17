@@ -9,9 +9,14 @@
     z-index: 1000;
 }
 
+#sidebar #logo{
+    margin-top:36px;
+    margin-left:32px;
+}
+
 #nav-buttons {
     margin-top: 20px;
-    margin-left: 10px;
+    margin-left: 45px;
 }
 
 #nav-buttons button {
@@ -22,6 +27,10 @@
     padding:5px;
     margin-top:5px;
     color: inherit;              /* inherit for text */
+}
+
+#nav-buttons button.active {
+    color: #632DE1;
 }
 
 #nav-buttons button:hover {
@@ -52,6 +61,7 @@
   color: white;
   text-align: center;
 }
+
 #user-profile-home {
     display: inline-block;
 }
@@ -129,3 +139,51 @@
     color: white;
     background-color: #0C0C0E;
 }
+
+
+#content-area {
+    margin-left: 240px;       /* leave space for sidebar */
+    padding:0;
+    background-color: #cde1f6;
+    height: 100vh;
+}
+
+#nav-bar-branch{
+    background-color: white;
+    padding:10px 10px;
+    height:50px;
+}
+#nav-bar-branch h1{
+    font-family: 'Inter';
+    font-size: 28px;
+    font-weight: 600;
+    color:#27272E;
+}
+#nav-bar-buttons{
+    margin-left: auto;
+    margin-right:0;
+}
+#del-button{
+    border : 1px solid red;
+    border-radius: 4px;
+    color: #FF4444;
+    background-color: transparent;
+    padding:6px 15px;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 600;
+    margin-right:10px;
+    cursor:pointer;
+}
+#add-button{
+    border : 1px solid #2E2E2E;
+    border-radius: 4px;
+    color: white;
+    background-color: #2E2E2E;
+    padding:6px 15px;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 600;
+    cursor:pointer;
+}
+
